@@ -1,0 +1,229 @@
+{
+  "Language": {
+    "tr": "Türkçe",
+    "en": "English"
+  },
+  "yes": {
+    "tr": "Evet",
+    "en": "Yes"
+  },
+  "no": {
+    "tr": "Hayır",
+    "en": "No"
+  },
+  "controlMode": {
+    "tr": "Kontrol Modu:",
+    "en": "Control Mode:"
+  },
+  "manual": {
+    "tr": "Manuel",
+    "en": "Manual"
+  },
+  "autonomous": {
+    "tr": "Otonom",
+    "en": "Autonomous"
+  },
+  "intervention": {
+    "tr": "Müdahale",
+    "en": "Intervention"
+  },
+  "speedLimit": {
+    "tr": "Hız Sınırı:",
+    "en": "Speed Limit:"
+  },
+  "kmh": {
+    "tr": "Km/s",
+    "en": "Km/h"
+  },
+  "notifyEngage": {
+    "tr": "Otonom Sürüşe Hazır",
+    "en": "Ready for autonomous driving"
+  },
+  "restartPC": {
+    "tr": "Bilgisayarı YENIDEN BAŞLATMAK İstediğinize Emin Misiniz?",
+    "en": "Are you sure you want to RESTART your computer?"
+  },
+  "restartAW": {
+    "tr": "Autoware'i YENİDEN BAŞLATMAK İstediğinize Emin Misiniz?",
+    "en": "Are you sure you want to RESTART Autoware?"
+  },
+  "shutdownPC": {
+    "tr": "Bilgisayarı KAPATMAK İstediğinize Emin Misiniz?",
+    "en": "Are you sure you want to SHUTDOWN your computer?"
+  },
+
+  "notifyEmergency": {
+    "tr": "Acil Durum Modu Aktif!",
+    "en": "Emergency Status Active!"
+  },
+  "notifyGoalPoint": {
+    "tr": "Önce Hedefi Seçin!",
+    "en": "First select a goal!"
+  },
+  "notifyWarningAutowareStatus": {
+    "tr": "Autoware Kapatıldı!",
+    "en": "Autoware is off!"
+  },
+  "notifySuccessAutowareStatus": {
+    "tr": "Autoware Başlatıldı!",
+    "en": "Autoware is on!"
+  },
+  "notifyWaitingForGoal": {
+    "tr": "Hedef Girmeniz Bekleniyor",
+    "en": "Waiting for goal selection"
+  },
+  "goalputdesc": {
+    "tr": "Hedef eklemek için haritanın üzerinde istediğiniz noktaya tıklayın",
+    "en": "Tap the map to add a goal"
+  },
+  "goalpoint": {
+    "tr": "Hedef Noktası",
+    "en": "Goal Point"
+  },
+  "checkpoint": {
+    "tr": "Durak Noktası",
+    "en": "CheckPoint"
+  },
+  "goalremove": {
+    "tr": "Hedefi Temizle",
+    "en": "Clear Goal"
+  },
+  "checkpointremove": {
+    "tr": "Durak Noktasını Sil",
+    "en": "Clear CheckPoint"
+  },
+  "carControllerStatus": {
+    "tr": "Araç Kontrolu durumu:",
+    "en": "Car Controller Status:"
+  },
+  "state": {
+    "tr": "Durum: ",
+    "en": "State: "
+  },
+  "missionState": {
+    "en": "Mission state: ",
+    "tr": "Görev durumu: "
+  },
+  "missionActive": {
+    "tr": "Aktif",
+    "en": "Active"
+  },
+  "missionInactive": {
+    "tr": "Aktif Değil",
+    "en": "Inactive"
+  },
+  "emergencyStatus": {
+    "tr": "Acil Durum",
+    "en": "Emergency Status"
+  },
+  "normalStatus": {
+    "tr": "Sistem Operasyonel",
+    "en": "System Operational"
+  },
+  "buttons": {
+    "refresh": {
+      "en": "Refresh",
+      "tr": "Yeniden Yükleme"
+    },
+    "addGoalpoint": {
+      "en": "Add GoalPoint",
+      "tr": "Hedef ekle"
+    },
+    "addCheckpoint": {
+      "en": "Add CheckPoint",
+      "tr": "Durak Noktası ekle"
+    },
+    "followCar": {
+      "en": "Follow Car",
+      "tr": "Araca Odakla"
+    },
+    "awRestart": {
+      "en": "AW Restart",
+      "tr": "AW Yeniden Başlat"
+    },
+    "pcRestart": {
+      "en": "Reboot",
+      "tr": "Yeniden Başlat"
+    },
+    "pcShutdown": {
+      "en": "Shutdown",
+      "tr": "Kapat"
+    },
+    "start": {
+      "en": "Start",
+      "tr": "Başlat"
+    },
+    "stop": {
+      "en": "Stop",
+      "tr": "Durdur"
+    },
+    "engage": {
+      "en": "Engage",
+      "tr": "Görevi Başlat"
+    },
+    "disengage": {
+      "en": "Disengage",
+      "tr": "Görevi Durdur"
+    },
+    "gear": {
+      "en": "Gear",
+      "tr": "Vites"
+    },
+    "set Limit": {
+      "en": "Set limit:",
+      "tr": "Sınırı ayarla:"
+    },
+    "send": {
+      "en": "Send",
+      "tr": "Gönder"
+    },
+    "Initializing": {
+      "en": "Initializing",
+      "tr": "Başlatılıyor"
+    },
+    "WaitingForGoal": {
+      "en": "Waiting for goal",
+      "tr": "Hedef bekleniyor"
+    },
+    "Planning": {
+      "en": "Planning",
+      "tr": "Rota Planlanıyor"
+    },
+    "ReadyForEngage": {
+      "en": "Ready for engage",
+      "tr": "Rota hazır"
+    },
+    "Driving": {
+      "en": "Driving",
+      "tr": "Sürüş"
+    },
+    "ArrivedGoal": {
+      "en": "Arrived goal",
+      "tr": "Hedefe ulaştı"
+    },
+    "Unknown": {
+      "en": "Unknown",
+      "tr": "Bilinmeyen Durum"
+    },
+    "Neutral": {
+      "en": "Neutral",
+      "tr": "Nötr"
+    },
+    "Reverse": {
+      "en": "Reverse",
+      "tr": "Geri"
+    },
+    "Drive": {
+      "en": "Drive",
+      "tr": "İleri"
+    },
+    "Low": {
+      "en": "Low",
+      "tr": "Düşük"
+    },
+    "Parking": {
+      "en": "Parking",
+      "tr": "Park"
+    }
+  }
+}

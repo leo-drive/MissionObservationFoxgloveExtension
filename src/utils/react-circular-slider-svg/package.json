@@ -1,0 +1,65 @@
+{
+  "name": "react-circular-slider-svg",
+  "version": "0.2.0",
+  "description": "A circular slider React component",
+  "keywords": [
+    "react",
+    "circular",
+    "circle",
+    "round",
+    "arc",
+    "slider",
+    "input",
+    "svg"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm test && npm run build && sleep 3 && (test -z \"$(git status --porcelain)\" || (echo \\\\n\\\\nuntracked changes, exiting! && git status --porcelain && exit 1))",
+    "postpublish": "PACKAGE_VERSION=$(echo 'const p = require(\"./package.json\"); process.stdout.write(p.version)' | node) && git tag v$PACKAGE_VERSION && git push --tags",
+    "test": "eslint src/** && prettier --check src/**",
+    "build": "rm -rf ./dist ./docs && prettier --write src/** docs-src/** && webpack && tsc",
+    "watch-docs": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnkhouri/react-circular-slider.git"
+  },
+  "author": "Marc Khouri <github@khouri.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnkhouri/react-circular-slider/issues"
+  },
+  "homepage": "https://github.com/mnkhouri/react-circular-slider#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-syntax-highlighter": "^15.5.5",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "peerDependencies": {
+    "react": ">=15.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "STATUS=$(git diff); npm run build && ([ \"$(git diff)\" == \"$STATUS\" ] || (echo 'git status changed!' && exit 1))"
+    }
+  }
+}
