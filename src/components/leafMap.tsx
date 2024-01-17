@@ -16,7 +16,7 @@ import { useAtom, useAtomValue } from "jotai";
 import { DivIcon, divIcon, Map } from "leaflet";
 import { useEffect, useRef, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap, useMapEvent } from "react-leaflet";
-import { MissionObs } from "./newMissionObs";
+// import { MissionObs } from "./newMissionObs";
 
 function degToRad(deg: number) {
   return deg * (Math.PI / 180);
@@ -165,18 +165,18 @@ function MapMain({ context }: { context: PanelExtensionContext }) {
   };
 
   return (
-    <div className="relative h-[calc(100vh_-_10rem)] w-full">
-      <div className="text-black h-full w-full flex flex-col items-center justify-center pt-24">
+    <div className="relative h-full w-full">
+      <div className="text-black h-full w-full flex flex-col items-center justify-center">
         <MapContainer
           ref={mapRef}
           center={[41.0196, 28.8894]}
           zoom={16}
           style={{
             userSelect: "none",
-            height: "27rem",
-            width: "24rem",
+            height: "100%",
+            width: "100%",
             backgroundColor: "white",
-            borderRadius: "2rem",
+            // borderRadius: "2rem",
           }}
           attributionControl={false}
           zoomControl={false}
@@ -288,7 +288,7 @@ function MapMain({ context }: { context: PanelExtensionContext }) {
             );
           })}
         </MapContainer>
-        <MissionObs context={context} />
+        {/* <MissionObs context={context} /> */}
       </div>
     </div>
   );

@@ -147,7 +147,7 @@ const MissionObservation = ({ context }: { context: PanelExtensionContext }) => 
   });
 
   return (
-    <div className="flex h-[calc(100vh_-_10rem)] bg-[#fff]">
+    <div className="flex h-screen bg-[#fff]">
       <MapMain context={context} />
     </div>
   );

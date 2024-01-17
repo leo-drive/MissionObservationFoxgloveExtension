@@ -168,33 +168,6 @@ export const MissionObs = ({ context }: { context: PanelExtensionContext }) => {
 
   return (
     <div className="flex flex-col w-full h-full z-[1] font-prompt relative">
-      {/* <Subscriber
-          topic="/planning/scenario_planning/max_velocity_default"
-          messageType="tier4_planning_msgs/VelocityLimit"
-          customCallback={(msg) => {
-            console.log(msg.max_velocity);
-            setVelocityLimit(msg.max_velocity);
-          }}
-        /> */}
-
-      {/* <Subscriber
-          topic="/ui/ui_process_manager_prime_node/ui_process_diagnostic"
-          messageType="std_msgs/UInt8"
-          customCallback={(msg) => {
-            let newState = msg as any;
-            console.log(msg);
-            if (newState.data === 0) {
-              // set all to false
-              setRecEngage(false);
-              setRecEmergency(false);
-              setRecVelocityLimit(30);
-              setVelocityLimit(8.333333333);
-              setVehicleState(0);
-              setVelocity(0);
-            }
-          }}
-        /> */}
-
       <div className="relative flex flex-col h-full items-center -z-10">
         <div className="absolute bottom-8 right-4 flex flex-col">
           <div className="h-28 w-22 p-2 bg-[#4e4e4e] text-white rounded-xl flex flex-col items-center justify-center">
